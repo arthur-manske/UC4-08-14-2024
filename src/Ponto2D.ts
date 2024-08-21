@@ -65,7 +65,7 @@ export class Ponto2D {
 	/* Implementação do método toString para Ponto2D */
 	toString(): string { return `Ponto2D { .x = ${this.x}, .y = ${this.y} }`; }
 
-	/* Distância entre dois Ponto2D */
+	/* Distância entre dois Ponto2D (Manhattan, não Euclidiana) */
 	distancia(b: Ponto2D): number { return Math.abs(this.x - b.x) + Math.abs(this.y - b.y); }
 
 	/* Implementação do método clone para Ponto2D */
